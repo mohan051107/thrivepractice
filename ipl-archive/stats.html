@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>IPL Archive | Stats 2008–2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; connect-src 'self';">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span>IPL</span> ARCHIVE</a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">About</a>
+    <a class="active" href="stats.html">Stats 2008–2026</a>
+    <a href="teams.html">2025 Squads</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="page-title"><p class="eyebrow">HISTORY</p><h1>IPL stats <span>2008–2026</span></h1><p>Search the season archive by year, champion, or player.</p></div>
+  <section class="toolbar" aria-label="Stats filters">
+    <label>Search <input id="statsSearch" type="search" maxlength="60" placeholder="e.g. Kohli, RCB, 2026" autocomplete="off"></label>
+    <label>Year
+      <select id="yearFilter"><option value="all">All seasons</option></select>
+    </label>
+  </section>
+  <div class="table-wrap">
+    <table>
+      <caption class="sr-only">IPL season statistics from 2008 to 2026</caption>
+      <thead><tr><th>Season</th><th>Champion</th><th>Runner-up</th><th>Orange Cap</th><th>Runs</th><th>Purple Cap</th><th>Wickets</th></tr></thead>
+      <tbody id="statsBody"></tbody>
+    </table>
+  </div>
+  <p id="resultCount" class="result-count"></p>
+</main>
+<footer>IPL Archive • Statistics are bundled locally.</footer>
+<script src="data/seasons.js" defer></script>
+<script src="js/stats.js" defer></script>
+</body>
+</html>
